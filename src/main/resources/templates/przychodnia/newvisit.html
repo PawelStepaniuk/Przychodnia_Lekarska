@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+
+    <div class="w3-container">
+        <div class="w3-card-4">
+            <div class="w3-container w3-green">
+                <h2>Wizyta</h2>
+            </div>
+            <form action="/visits" method="post">
+                <label for="exampleFormControlSelect1">Wybór pacjenta:</label>
+
+                <select name="patient" class="form-control" id="exampleFormControlSelect1">
+                    <option th:each="patient : ${kluczyk1}" th:text="${patient.name + ' ' + patient.surname + ', wiek: '  + patient.birthday + ' ' + 'PESEL: ' + patient.PESEL}" th:value="${patient.id}"></option>
+                </select>
+
+                <br />
+
+                <label for="exampleFormControlSelect2">Wymagana profesja twojego lekarza:</label>
+                <select name="doctor" class="form-control" id="exampleFormControlSelect2">
+                    <option th:each="doctor : ${kluczyk2}" th:value="${doctor.id}" th:text="${doctor.profession + ' ' + doctor.name + ' ' + doctor.surname}"></option>
+                </select>
+                <br />
+
+                <!-- tylko to mi zapisuje do bazy danych visit -->
+                <label for="textfield12">Data wizyty:</label>
+                <input type="date" name="date" id="textfield12">
+                <br />
+                <button type="submit" class="w3-btn w3-green">Dodaj wizyte</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

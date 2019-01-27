@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Product Page Template</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+   
+                <div class="jumbotron">
+                    <h1>NASI LEKARZE:</h1>
+
+                    <table class="w3-table w3-border w3-hoverable">
+                        <tr>
+                            <th>Imie</th>
+                            <th>Nazwisko</th>
+                            <th>Data Urodzenia</th>
+                            <th>Profesja</th>
+                            <th>Stawka</th>
+                        </tr>
+                        <div th:each="doctor : ${kluczyk}">
+                            <tr>
+                                <td>
+                                    <p th:text="${doctor.name}"></p>
+                                </td>
+                                <td>
+                                    <p th:text="${doctor.surname}">
+                                </td>
+                                <td>
+                                    <p th:text="${doctor.birthday}">
+                                </td>
+                                <td>
+                                    <p th:text="${doctor.profession}">
+                                </td>
+                                <td>
+                                    <p th:text="${doctor.pricePerHour + ' pln/h'}">
+                                </td>
+                            </tr>
+                        </div>
+                    </table>
+
+                </div>
+            
+</body>
+
+</html>

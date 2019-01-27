@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Product Page Template</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+
+
+
+</head>
+
+<body>
+    <div class="w3-container">
+        
+        <div class="w3-card-4">
+            <div class="w3-container w3-green">
+                <h2>Dane Lekarza</h2>
+            </div>
+
+            <form action="/doctors" method="post">
+
+                <div class="box">
+                    <label for="imie_doktoraid">Imię</label>
+                    <input class ="w3-input" type="text" name="name" id="imie_doktoraid">
+                </div>
+                <div class="box">
+                    <label for="nazwisko_doktoraid">Nazwisko</label>
+                    <input class ="w3-input" type="text" name="surname" id="nazwisko_doktoraid">
+                </div>
+                <div class="clear"></div>
+                <div class="box">
+                    <label for="wiek_doktoraid">Wiek</label>
+                    <input class ="w3-input" type="date" name="birthday" id="wiek_doktoraid">
+                </div>
+                <div class="clear"></div>
+                <div class="box">
+                    <label for="profesja_doktoraid">Specjalizacja</label>
+                    <input class ="w3-input" type="text" name="profession" id="profesja_doktoraid">
+                </div>
+                <div class="clear"></div>
+                <div class="box">
+                    <label for="stawka_godzinowaid">Stawka godzinowa (PLN/h)</label>
+                    <input class ="w3-input" type="text" name="pricePerHour" id="stawka_godzinowaid">
+                </div>
+                <div class="clear"></div>
+                <div class="box">
+                    <!-- GUZIK DODAWANIA LEKARZA -->
+                    <button class="w3-btn w3-green" type="submit">Dodaj lekarza</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+
+</html>

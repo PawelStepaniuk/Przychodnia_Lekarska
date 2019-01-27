@@ -1,0 +1,16 @@
+.w3-container{
+    padding: 1rem;
+}
+.w3-card-4{
+    background-color: white;
+    padding: 1rem;
+    width:40%;
+}
+.w3-input{
+    padding-right: 20px;
+}
+body {
+    background-color: lightskyblue;}
+.jumbotron{
+    margin: 5%
+}
