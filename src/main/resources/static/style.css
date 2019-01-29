@@ -9,8 +9,13 @@
 .w3-input{
     padding-right: 20px;
 }
-body {
-    background-color: lightskyblue;}
+.button {
+    width: 100%;
+
+}
 .jumbotron{
     margin: 5%
 }
+img{display: block;
+    margin-left: auto;
+    margin-right: auto }
