@@ -22,7 +22,7 @@ public class DoctorController {
     //1. TWORZENIE NOWEGO LEKARZA
     @GetMapping("/newdoctor")
     public String newdoctort() {
-        return "/newdoctor";
+        return "newdoctor";
     }
 
 

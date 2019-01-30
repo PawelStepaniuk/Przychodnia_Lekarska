@@ -20,7 +20,7 @@ public class PatientController {
     //1. TWORZENIE NOWEGO PACJENTA
     @GetMapping("/newpatient")
     public String newpatient() {
-        return "/newpatient";
+        return "newpatient";
     }
 
     //2. ZAPIS W BAZIE DANYCH ORAZ PRZEKIEROWANIE
