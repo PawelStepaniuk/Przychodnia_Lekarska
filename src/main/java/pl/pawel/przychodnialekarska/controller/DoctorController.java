@@ -22,7 +22,7 @@ public class DoctorController {
     //1. TWORZENIE NOWEGO LEKARZA
     @GetMapping("/newdoctor")
     public String newdoctort() {
-        return "/przychodnia/newdoctor";
+        return "/newdoctor";
     }
 
 
@@ -40,7 +40,7 @@ public class DoctorController {
     @GetMapping("/alldoctors")
     public String alldoctors(ModelMap modelMap) {
         modelMap.put("kluczyk", doctorDao.findAll());
-        return "/przychodnia/alldoctors";
+        return "/alldoctors";
     }
 
 }

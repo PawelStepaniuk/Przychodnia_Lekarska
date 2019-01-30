@@ -13,7 +13,7 @@ public class MainController {
     //STRONA GŁÓWNA
     @GetMapping("/")
     public String main(){
-        return "/przychodnia/index.html";
+        return "/index.html";
     }
 
 

@@ -35,7 +35,7 @@ public class VisitController {
         modelMap.put("kluczyk1", patientDao.findAll());
         modelMap.put("kluczyk2", doctorDao.findAll());
 
-        return "/przychodnia/newvisit";
+        return "/newvisit";
     }
 
     //2. PRZEKIEROWANIE
@@ -50,7 +50,7 @@ public class VisitController {
     @GetMapping("/allvisits")
     public String allvisits(ModelMap modelMap) {
         modelMap.put("kluczyk10", visitDao.findAll());
-        return "/przychodnia/allvisits";
+        return "/allvisits";
     }
 
 
