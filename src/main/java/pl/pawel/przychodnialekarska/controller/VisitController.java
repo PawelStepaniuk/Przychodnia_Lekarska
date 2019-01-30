@@ -16,8 +16,7 @@ import pl.pawel.przychodnialekarska.model.Visit;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.List;
+
 
 @Controller
 public class VisitController {
@@ -35,7 +34,7 @@ public class VisitController {
         modelMap.put("kluczyk1", patientDao.findAll());
         modelMap.put("kluczyk2", doctorDao.findAll());
 
-        return "/newvisit";
+        return "newvisit";
     }
 
     //2. PRZEKIEROWANIE
