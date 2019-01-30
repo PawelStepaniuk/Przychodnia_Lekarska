@@ -40,7 +40,7 @@ public class DoctorController {
     @GetMapping("/alldoctors")
     public String alldoctors(ModelMap modelMap) {
         modelMap.put("kluczyk", doctorDao.findAll());
-        return "/alldoctors";
+        return "alldoctors";
     }
 
 }

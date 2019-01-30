@@ -50,7 +50,7 @@ public class VisitController {
     @GetMapping("/allvisits")
     public String allvisits(ModelMap modelMap) {
         modelMap.put("kluczyk10", visitDao.findAll());
-        return "/allvisits";
+        return "allvisits";
     }
 
 

@@ -34,7 +34,7 @@ public class PatientController {
     @GetMapping("/allpatients")
     public String allpatients(ModelMap modelMap) {
         modelMap.put("patients", patientDao.findAll());
-        return "/allpatients";
+        return "allpatients";
     }
 
 
